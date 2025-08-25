@@ -84,7 +84,6 @@ class AuthController extends Controller
             'nama_lengkap' => 'required',
             'email' => 'required|email',
             'password' => 'required',
-            'otp' => 'required',
         ]);
 
         if($validator->fails()){
