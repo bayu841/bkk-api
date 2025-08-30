@@ -16,6 +16,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Satoshi Variable', sans-serif;
+             scroll-behavior: smooth;
         }
 
         .btn-navbar {
@@ -108,6 +109,7 @@
             width: 50px;
             border-radius: 5px;
             text-align: center;
+            text-decoration: none;
         }
 
         .container-2 {
@@ -706,6 +708,7 @@
             transition: background .2s ease, transform .05s ease, box-shadow .2s ease;
             box-shadow: 0 6px 14px rgba(37, 99, 235, .25);
             margin-left: 5rem;
+            text-decoration: none;
         }
 
         .tracer .detail:hover,
@@ -1313,10 +1316,10 @@
     <nav>
         <ul>
             <li><img src="{{ asset('image/logo.png') }}" alt="" width="200"></li>
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Tentang</a></li>
-            <li><a href="">Loker</a></li>
-            <li><a href="">Perusahaan</a></li>
+            <li><a href="{{route('home')}}">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="{{route('daftarlowongan')}}">Loker</a></li>
+            <li><a href="#mitra">Perusahaan</a></li>
         </ul>
     </nav><br><br><br><br>
     <div class="hero">
@@ -1333,7 +1336,7 @@
                     <option value="manager">Sidoarjo</option>
                 </select>
             </div>
-            <div class="search">Cari</div>
+            <a href="{{route('daftarlowongan')}}" class="search">Cari</a>
         </div><br>
         <p>Daftar Sekarang dan dapatkan pekerjaan secepatnya</p><br>
         <button class="daftar">Daftar Sekarang</button>
@@ -1383,7 +1386,7 @@
             <div class="badge">1.000+ <span>Siswa Unggul</span></div>
         </div>
 
-        <div class="right">
+        <div class="right" id="tentang">
             <h2>Tentang BKK</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -1509,7 +1512,7 @@
             </div>
         </div>
     </div>
-    <div class="mitra">
+    <div class="mitra" id="mitra">
         <h2>Mitra Kami</h2>
         <p>Kami Telah Bekerja sama dengan <br>
             Beberapa perushaan besar</p><br>
@@ -1582,7 +1585,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <button class="detail" type="button">Selengkapnya</button>
+            <a href="{{route('treacer')}}" class="detail">Detail</a>
         </div>
     </section>
     <section class="agenda" aria-labelledby="agenda-title">
