@@ -31,7 +31,7 @@
         }
 
         nav ul img {
-            margin-right: 45rem;
+            margin-right: 42rem;
         }
 
         nav ul {
@@ -224,6 +224,7 @@
             <li><a href="{{route('home')}}">Tentang</a></li>
             <li><a href="{{route('daftarlowongan')}}">Loker</a></li>
             <li><a href="{{route('home')}}">Perusahaan</a></li>
+            <i class="bi bi-person-circle" style="font-size: 3rem; color: #2563eb; font-size:40px;"></i>
         </ul>
     </nav><br><br><br><br><br>
     <div class="container py-5">

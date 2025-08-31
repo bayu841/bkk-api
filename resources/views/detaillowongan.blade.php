@@ -9,6 +9,7 @@
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         }
 
         nav ul img {
-            margin-right: 45rem;
+            margin-right: 42rem;
         }
 
         nav ul {
@@ -175,6 +176,7 @@
             <li><a href="{{route('home')}}">Tentang</a></li>
             <li><a href="{{route('daftarlowongan')}}">Loker</a></li>
             <li><a href="{{route('home')}}">Perusahaan</a></li>
+            <i class="bi bi-person-circle" style="font-size: 3rem; color: #2563eb; font-size:40px;"></i>
         </ul>
     </nav><br><br><br><br><br>
     <div class="container mt-3">

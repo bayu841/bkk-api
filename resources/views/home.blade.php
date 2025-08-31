@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -16,7 +17,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Satoshi Variable', sans-serif;
-             scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
 
         .btn-navbar {
@@ -54,13 +55,25 @@
         }
 
         nav ul img {
-            margin-right: 45rem;
+            margin-right: 42rem;
             margin-left: 2rem;
         }
 
         .hero {
             padding: 7rem;
             padding-top: 10rem;
+        }
+
+        .hero-student {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hero-student img {
+            width: 400px;
+            margin-top: -25rem;
+            margin-right: 2rem;
+
         }
 
         .hero img {
@@ -126,8 +139,9 @@
         }
 
         .wave img {
-            margin-top: -3rem;
+            margin-top: -15rem;
             width: 100%;
+            z-index: 99;
         }
 
         .container {
@@ -198,6 +212,17 @@
             color: #555;
         }
 
+        .card-containt {
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            display: inline;
+        }
+
+        .text-containt {
+            margin-top: 2rem;
+        }
+
         .card {
             background: white;
             padding: 15px 20px;
@@ -207,6 +232,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+
         }
 
         .icon {
@@ -325,6 +351,25 @@
             font-weight: bold;
         }
 
+        .job-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
+        }
+
+        .job {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            gap: 2rem;
+        }
+
         .job-card {
             display: flex;
             align-items: center;
@@ -336,10 +381,39 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
-        .job-info {
+        .job-info img {
+            width: 300px;
+        }
+
+        .job-info2 {
             display: flex;
-            gap: 15px;
+            justify-content: space-between;
             align-items: center;
+            flex: 1;
+            gap: 15px;
+        }
+
+        .job-info2 p {
+            margin: 0;
+            font-size: 14px;
+            flex: 1;
+        }
+
+        .job-info2 img {
+            margin-left: 2rem;
+        }
+
+        .job-info button {
+            background: #2979ff;
+            border: none;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .job-info button:hover {
+            background: #1565c0;
         }
 
         .job-info img {
@@ -349,6 +423,7 @@
             object-fit: contain;
             background: #fff;
             padding: 5px;
+
         }
 
         .job-text h3 {
@@ -425,6 +500,34 @@
             margin-bottom: 5px;
         }
 
+        .steps {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .steps li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .steps li .circle {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #4a90e2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+
         .steps,
         .latest {
             background: white;
@@ -463,6 +566,20 @@
             display: block;
             color: #777;
             font-size: 12px;
+        }
+
+        .latest button {
+            background: #2979ff;
+            border: none;
+            color: #fff;
+            font-size: 13px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .latest button:hover {
+            background: #1565c0;
         }
 
         .mitra {
@@ -669,6 +786,7 @@
             grid-template-columns: 360px 1fr;
             gap: 26px;
             align-items: center;
+            height: 250px;
         }
 
         .tracer img {
@@ -1131,11 +1249,13 @@
         }
 
         .promo-img {
-            width: 140px;
+            width: 190px;
             height: auto;
             object-fit: contain;
             justify-self: end;
             filter: drop-shadow(0 8px 18px rgba(0, 0, 0, .2));
+           margin-bottom: -2rem;
+
         }
 
         .form {
@@ -1312,17 +1432,157 @@
             height: 30px;
             margin: 5px 10px 0 0;
         }
+
+        @media (max-width: 1200px) {
+            .container-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .right {
+                order: 2;
+            }
+        }
+
+        @media (max-width: 992px) {
+            nav {
+                height: 60px;
+            }
+
+            nav ul {
+                gap: 14px;
+            }
+
+            .small-img {
+                right: 0;
+            }
+
+            .badge {
+                bottom: -36px;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .agenda-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tracer {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 6rem;
+            }
+
+            .container {
+                gap: 16px;
+                margin-top: 24px;
+            }
+
+            .profile {
+                flex-wrap: wrap;
+            }
+
+            .btn {
+                margin-left: 0;
+            }
+
+            .news-card {
+                height: 200px;
+            }
+
+            .promo-card {
+                grid-template-columns: 1fr;
+                row-gap: 10px;
+            }
+
+            .promo-img {
+                width: 120px;
+                justify-self: start;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            nav ul {
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 13px;
+            }
+
+            .container-2 {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search,
+            .daftar {
+                width: 100%;
+            }
+
+            .small-img {
+                display: none;
+            }
+
+            .badge {
+                position: static;
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .job-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .job-card>img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .mitra-img img {
+                width: 100px;
+            }
+
+            .ts-nav {
+                bottom: 6px;
+            }
+
+            .footer {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
     <nav>
         <ul>
             <li><img src="{{ asset('image/logo.png') }}" alt="" width="200"></li>
-            <li><a href="{{route('home')}}">Beranda</a></li>
+            <li><a href="{{ route('home') }}">Beranda</a></li>
             <li><a href="#tentang">Tentang</a></li>
-            <li><a href="{{route('daftarlowongan')}}">Loker</a></li>
+            <li><a href="{{ route('daftarlowongan') }}">Loker</a></li>
             <li><a href="#mitra">Perusahaan</a></li>
+            <i class="bi bi-person-circle" style="font-size: 3rem; color: #2563eb; font-size:40px;"></i>
         </ul>
     </nav><br><br><br><br>
     <div class="hero">
+        <img src="{{ asset('image/Pattern.png') }}" alt="" width="200"
+            style=" margin-top: -10rem;left: 0; position: absolute;">
+        <img src="{{ asset('image/Pattern.png') }}" alt="" width="200"
+            style=" margin-top: -1rem;left: 70rem; position: absolute; margin-top:-13rem;">
         <p>SMKN 6 JEMBER</p>
         <h1>Cari Lowongan Kerja</h1>
         <div class="container-2">
@@ -1336,10 +1596,13 @@
                     <option value="manager">Sidoarjo</option>
                 </select>
             </div>
-            <a href="{{route('daftarlowongan')}}" class="search">Cari</a>
+            <a href="{{ route('daftarlowongan') }}" class="search">Cari</a>
         </div><br>
         <p>Daftar Sekarang dan dapatkan pekerjaan secepatnya</p><br>
         <button class="daftar">Daftar Sekarang</button>
+    </div>
+    <div class="hero-student">
+        <img src="{{ asset('image/hero.png') }}" alt="">
     </div>
     <div class="wave">
         <img src="{{ asset('image/Vector 46.png') }}" alt="" width="100%">
@@ -1376,37 +1639,46 @@
                 </div>
             </div>
         </section>
-        <img src="{{ asset('image/Vector 47.png') }}" alt="">
     </div>
+    <img src="{{ asset('image/Vector 47.png') }}" alt="" style="margin-top: -2rem;" width="100%">
     <div class="container">
 
         <div class="left">
             <img src="{{ asset('image/Rectangle 463.png') }}" class="main-img" alt="Foto Utama">
-            <img src="{{ asset('image/Rectangle 464.png') }}" class="small-img" alt="Foto Kecil">
+            <img src="{{ asset('image/Rectangle 511.png') }}" class="small-img" alt="Foto Kecil">
             <div class="badge">1.000+ <span>Siswa Unggul</span></div>
         </div>
 
         <div class="right" id="tentang">
+            <img src="{{ asset('image/Pattern.png') }}" alt="" width="200"
+                style=" margin-top: -10rem;left: 0; position: absolute;">
             <h2>Tentang BKK</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-
-            <div class="card">
-                <div class="icon">💼</div>
-                <div>
-                    <strong>Lowongan Kerja Terbaik</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="card-containt">
+                <div class="card">
+                    <div class="icon"><img src="{{ asset('image/image90.png') }}" alt="" width="60">
+                    </div>
+                    <div>
+                        <div class="text-containt">
+                            <strong>Lowongan Kerja Terbaik</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="icon">🌐</div>
-                <div>
-                    <strong>Relasi Luas</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="card">
+                    <div class="icon"><img src="{{ asset('image/image90.png') }}" alt="" width="60">
+                    </div>
+                    <div>
+                        <div class="text-containt">
+                            <strong>Relasi Luas</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="profile" style="width: 500px">
@@ -1419,6 +1691,8 @@
             </div>
         </div>
     </div><br><br><br>
+    <img src="{{ asset('image/Pattern.png') }}" alt="" width="200"
+        style="left: 71.9rem;:flex-end; display: flex; position: absolute; margin-top:-8rem; ">
     <div class="container-4">
 
         <div class="left">
@@ -1430,7 +1704,10 @@
                     <img src="{{ asset('image/Rectangle 444.png') }}" alt="Logo">
                     <div class="job-text">
                         <h3>Welding Leader | PT Yogya Presisi</h3>
-                        <p>Lokasi: Surabaya | Deadline: 30 Sept 2025</p>
+                        <p>PT YOGYA PRESISI TEHNIKATAMA INDUSTRI <br>
+                            Pendidikan: D3/S1 <br>
+                            Jenis Kelamin: Laki-laki <br>
+                            Lokasi: SLEMAN, INDONESIA</p>
                     </div>
                 </div>
                 <img src="{{ asset('image/Rectangle 445.png') }}" alt="">
@@ -1441,7 +1718,10 @@
                     <img src="{{ asset('image/Rectangle 444 (1).png') }}" alt="Logo">
                     <div class="job-text">
                         <h3>Staf Crew | PT Duta Intibudimaya (MR DIY)</h3>
-                        <p>Lokasi: Jakarta | Deadline: 15 Okt 2025</p>
+                        <p>PT DUTA INTIGUNA YASA (MR DIY) <br>
+                            Pendidikan: SMA / SMK <br>
+                            Jenis Kelamin: Laki-laki & Perempuan <br>
+                            Lokasi: BLITAR, INDONESIA</p>
                     </div>
                 </div>
                 <img src="{{ asset('image/Rectangle 445.png') }}" alt="">
@@ -1451,7 +1731,10 @@
                     <img src="{{ asset('image/Rectangle 444 (2).png') }}" alt="Logo">
                     <div class="job-text">
                         <h3>Salesman | PT INDOOFOOD ICBP</h3>
-                        <p>Lokasi: Jakarta | Deadline: 15 Okt 2025</p>
+                        <p>PT INDOFOOD GROUP <br>
+                            Pendidikan: SMA / SMK <br>
+                            Jenis Kelamin: Laki-laki & Perempuan <br>
+                            Lokasi: SURABAYA, INDONESIA</p>
                     </div>
                 </div>
                 <img src="{{ asset('image/Rectangle 445.png') }}" alt="">
@@ -1461,7 +1744,10 @@
                     <img src="{{ asset('image/Rectangle 444 (3).png') }}" alt="Logo">
                     <div class="job-text">
                         <h3>Operator Pola | PT Duta Intibudimaya</h3>
-                        <p>Lokasi: Jakarta | Deadline: 15 Okt 2025</p>
+                        <p>PT TUN HONG GARMENT INDONESIA <br>
+                            Pendidikan: SMA / SMK <br>
+                            Jenis Kelamin: Laki-laki & Perempuan <br>
+                            Lokasi: BOYOLALI, INDONESIA</p>
                     </div>
                 </div>
                 <img src="{{ asset('image/Rectangle 445.png') }}" alt="">
@@ -1472,7 +1758,10 @@
                     <img src="{{ asset('image/Rectangle 444 (4).png') }}" alt="Logo">
                     <div class="job-text">
                         <h3>Salesman | PT LAVILA KREATIV Perkasa</h3>
-                        <p>Lokasi: Bandung | Deadline: 5 Okt 2025</p>
+                        <p>PT LAVILLA KREATIF PERKASA <br>
+                            Pendidikan: SMP / SLTP Sederajat <br>
+                            Jenis Kelamin: Laki-laki <br>
+                            Lokasi: GRESIK, INDONESIA</p>
                     </div>
                 </div>
                 <img src="{{ asset('image/Rectangle 445.png') }}" alt="">
@@ -1484,31 +1773,48 @@
         </div>
         <!-- RIGHT SIDE -->
         <div class="right">
-            <div class="profile">
-                <img src="{{ asset('image/Rectangle 444 (5).png') }}" alt="Profile">
-                <h4>BKK Admin</h4>
-                <small>SMK Example</small>
-            </div>
-
-            <div class="steps">
-                <h3>Alur Pendaftaran Pekerjaan</h3>
-                <ul>
-                    <li>1. Daftar Akun</li>
-                    <li>2. Login Akun</li>
-                    <li>3. Verifikasi Akun</li>
-                    <li>4. Pilih atau Cari Loker</li>
-                    <li>5. Daftar Pekerjaan</li>
-                    <li>5. Daftar Ulang</li>
-                </ul>
+            <div class="containerprofile">
+                <img src="{{ asset('image/Rectangle 447.png') }}" alt="Gambar Orang">
+                <div class="content">
+                    <ul class="steps">
+                        <h3>Alur Pendaftaran Pekerjaan</h3>
+                        <hr style="width: 320px;"><br>
+                        <li><span class="circle">1</span> Daftar Akun</li>
+                        <li><span class="circle">2</span> Login Akun</li>
+                        <li><span class="circle">3</span> Verifikasi Akun</li>
+                        <li><span class="circle">4</span> Pilih atau cari loker</li>
+                        <li><span class="circle">5</span> Daftar Pekerjaan</li>
+                        <li><span class="circle">6</span> Daftar Ulang</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="latest">
                 <h3>Lowongan Teratas</h3>
-                <ul>
-                    <li>Operator Produksi | PT ABC <small>Jakarta</small></li>
-                    <li>Admin Kantor | PT XYZ <small>Bandung</small></li>
-                    <li>Marketing | PT Maju Jaya <small>Surabaya</small></li>
-                </ul>
+                <div class="job">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=job1" alt="QR" ">
+                    <div class="job-info2">
+                        <p>Welding Leader | PT YOGYA PRESISI TEHNIKATAMA INDUSTRI<br> SLEMAN, INDONESIA</p>
+                        <button>Lihat</button>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=job2" alt="QR">
+                    <div class="job-info2">
+                        <p>Store Crew | PT DUTA INTIGUNA YASA (MR DIY)<br> BLITAR, INDONESIA</p>
+                        <button>Lihat</button>
+                    </div>
+                </div>
+
+
+                <div class="job">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=job4" alt="QR">
+                    <div class="job-info2">
+                        <p>Operator Pola | PT TUN HONG GARMENT INDONESIA<br> BOYOLALI, INDONESIA</p>
+                        <button>Lihat</button>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1584,8 +1890,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a href="{{route('treacer')}}" class="detail">Detail</a>
+            </p><br>
+            <a href="{{ route('treacer') }}" class="detail">Selengkapnya</a>
         </div>
     </section>
     <section class="agenda" aria-labelledby="agenda-title">
@@ -1595,7 +1901,7 @@
         <div class="agenda-grid">
             <div class="agenda-list">
                 <article class="agenda-item">
-                    <img src="{{ asset('image/agenda-1.jpg') }}" alt="Tim sedang rapat">
+                    <img src="{{ asset('image/Rectangle 463.png') }}" alt="Tim sedang rapat">
                     <div class="agenda-body">
                         <h3 class="agenda-title">Job Fair 50 Perusahaan</h3>
                         <p class="agenda-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -1610,7 +1916,7 @@
                 Copy
                 <!-- Item 2 -->
                 <article class="agenda-item">
-                    <img src="{{ asset('image/agenda-2.jpg') }}" alt="Presentasi bisnis">
+                     <img src="{{ asset('image/Rectangle 463.png') }}" alt="Tim sedang rapat">
                     <div class="agenda-body">
                         <h3 class="agenda-title">Bussines Show</h3>
                         <p class="agenda-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -1624,7 +1930,7 @@
 
                 <!-- Item 3 -->
                 <article class="agenda-item">
-                    <img src="{{ asset('image/agenda-3.jpg') }}" alt="Workshop bersama">
+                   <img src="{{ asset('image/Rectangle 463.png') }}" alt="Tim sedang rapat">
                     <div class="agenda-body">
                         <h3 class="agenda-title">Workshop Bareng Google</h3>
                         <p class="agenda-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -1643,7 +1949,7 @@
             <aside class="agenda-side">
                 <article class="feature-card">
                     <figure class="feature-media">
-                        <img src="{{ asset('image/agenda-feature.jpg') }}" alt="Webinar bersama tim">
+                        <img src="{{ asset('image/Rectangle 511.png') }}" alt="Webinar bersama tim">
                     </figure>
                     <div class="feature-body">
                         <h3 class="feature-title">Webinar Bareng Sam Altman, Krisis Teknologi dalam Dunia Bisnis</h3>
@@ -1658,7 +1964,7 @@
                         <p class="promo-meta">Panduan langkah demi langkah di BKK</p>
                         <a href="#" class="btn-secondary light">Selengkapnya</a>
                     </div>
-                    <img class="promo-img" src="{{ asset('image/promo.png') }}" alt="Ilustrasi siswa membawa buku">
+                    <img class="promo-img" src="{{ asset('image/image 110.png') }}" alt="Ilustrasi siswa membawa buku" >
                 </article>
             </aside>
         </div>
@@ -1697,9 +2003,9 @@
             <!-- Kolom kanan: daftar ringkas -->
             <aside class="news-list" aria-label="Berita Lainnya">
                 <article class="news-card">
-                    <img src="{{ asset('image/Rectangle 463.png') }}" alt="Siswa presentasi di ruang rapat">
+                    <img src="{{ asset('image/Screenshot (561).png') }}" alt="Siswa presentasi di ruang rapat">
                     <div class="news-card-overlay">
-                        <h4 class="news-card-title">Siswa SMKN 6 Jember Keterima Kerja di Jepang</h4>
+                        <h4 class="news-card-title">JOB FAIR SMKN 6 Jember di Alun-Alun Tanggul</h4>
                         <a href="#" class="news-card-link">Selengkapnya</a>
                     </div>
                 </article>
@@ -1750,9 +2056,9 @@
 
                 <p><b>Hubungi Kami</b></p>
                 <div class="social-links">
-                    <img src="{{asset('image/image 107.png')}}" alt="">
-                    <img src="{{asset('image/image 108.png')}}" alt="">
-                    <img src="{{asset('image/image 109.png')}}" alt="">
+                    <img src="{{ asset('image/image 107.png') }}" alt="">
+                    <img src="{{ asset('image/image 108.png') }}" alt="">
+                    <img src="{{ asset('image/image 109.png') }}" alt="">
                 </div>
             </div>
     </section>

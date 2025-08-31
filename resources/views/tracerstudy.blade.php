@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -32,7 +33,7 @@
         }
 
         nav ul img {
-            margin-right: 45rem;
+            margin-right: 42rem;
         }
 
         nav ul {
@@ -263,6 +264,7 @@
             <li><a href="{{route('home')}}">Tentang</a></li>
             <li><a href="{{route('daftarlowongan')}}">Loker</a></li>
             <li><a href="{{route('home')}}">Perusahaan</a></li>
+            <i class="bi bi-person-circle" style="font-size: 3rem; color: #2563eb; font-size:40px;"></i>
         </ul>
     </nav><br><br><br><br><br>
 
